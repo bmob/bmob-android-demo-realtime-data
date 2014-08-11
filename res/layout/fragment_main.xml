@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bmob.realtimedatademo.MainActivity$PlaceholderFragment" >
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_bottom"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <EditText 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="用户名"
+	        android:id="@+id/et_name"/>
+	    <EditText 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="内容"
+	        android:id="@+id/et_content"/>
+        <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_send"
+            android:onClick="onClick"
+            android:text="发送"/>
+    </LinearLayout>
+    
+    <ListView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/ll_bottom"
+        android:id="@+id/lv_data"></ListView>
+    
+
+</RelativeLayout>
