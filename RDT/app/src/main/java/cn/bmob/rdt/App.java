@@ -16,6 +16,6 @@ public class App extends Application {
         /**
          * 数据监听是付费功能，请确保您appkey对应的应用已开通数据监听功能
          */
-        Bmob.initialize(this, "f25fe6dad5bca9d0bb090072ea1e3c65");
+        Bmob.initialize(this, "此处替换你应用的appid");
     }
 }
